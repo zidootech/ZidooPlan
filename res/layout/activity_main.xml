@@ -1,0 +1,29 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff" >
+
+    <Button
+        android:id="@+id/add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="30dip"
+        android:layout_marginTop="30dip"
+        android:padding="10dip"
+        android:text="Add time"
+        android:textColor="#000000"
+        android:textSize="25sp" />
+
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="500dip"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="135dip"
+        android:layout_marginTop="135dip" >
+    </ListView>
+
+</RelativeLayout>

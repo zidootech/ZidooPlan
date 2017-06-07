@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="552dp"
+        android:layout_height="390dp"
+        android:background="@drawable/img_format_dialog_bg"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/dialog_hint_view_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:gravity="center|center_vertical"
+            android:text="@string/txt_time_select"
+            android:textColor="#ffffff"
+            android:textSize="22dp" />
+
+        <LinearLayout
+            android:layout_width="552dp"
+            android:layout_height="44dp"
+            android:layout_marginTop="17dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="10dp"
+            android:paddingLeft="70dp"
+            android:paddingRight="70dp"
+            android:paddingTop="10dp" >
+
+            <TextView
+                android:id="@+id/tv_year"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/tv_year"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="18dp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_month"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/tv_month"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="18dp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_day"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/tv_day"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="18dp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_hours"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/tv_hours"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/tv_min"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/tv_min"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/tv_second"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/tv_second"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="18dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="488dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingBottom="10dp"
+            android:paddingLeft="50dp"
+            android:paddingRight="50dp"
+            android:paddingTop="10dp" >
+
+            <com.zidoo.rtk.hdmi.wheel.WheelView
+                android:id="@+id/wheel_yea"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:focusable="true" />
+
+            <com.zidoo.rtk.hdmi.wheel.WheelView
+                android:id="@+id/wheel_mouth"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:focusable="true" />
+
+            <com.zidoo.rtk.hdmi.wheel.WheelView
+                android:id="@+id/wheel_day"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:focusable="true" />
+
+            <com.zidoo.rtk.hdmi.wheel.WheelView
+                android:id="@+id/wheel_hour"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:focusable="true" />
+
+            <ImageView
+                android:layout_width="3dp"
+                android:layout_height="14dp"
+                android:clickable="false"
+                android:focusable="false"
+                android:src="@drawable/maohao" />
+
+            <com.zidoo.rtk.hdmi.wheel.WheelView
+                android:id="@+id/wheel_menute"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:focusable="true" />
+
+            <ImageView
+                android:layout_width="3dp"
+                android:layout_height="14dp"
+                android:clickable="false"
+                android:focusable="false"
+                android:src="@drawable/maohao" />
+
+            <com.zidoo.rtk.hdmi.wheel.WheelView
+                android:id="@+id/wheel_second"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:focusable="true" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="13dp"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/txt_time_select_hint"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="18dp" />
+
+            <Button
+                android:id="@+id/btn_time_ok"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:background="@drawable/xml_btn_bg"
+                android:text="@string/txt_ok"
+                android:textSize="20sp"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/btn_time_ancle"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/xml_btn_bg"
+                android:text="@string/txt_cancel"
+                android:textSize="20sp"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

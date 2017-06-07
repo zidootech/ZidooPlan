@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="white_gray">#aaa</color>
+    <color name="default_focus">#6cb865</color>
+    <color name="default_select">#e2e407</color>
+    <color name="page_item_text">#ffffff</color>
+    <color name="detaile_title">#ffffff</color>
+    <color name="enable">#55ffffff</color>
+    <color name="yellow">#ffd03b</color>
+    <color name="surface_bg_select">#97f12d</color>
+    <color name="white_nomal">#99FFFFFF</color>
+</resources>
